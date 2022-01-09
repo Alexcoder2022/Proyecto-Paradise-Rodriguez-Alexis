@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Bangers&family=Bowlby+One+SC&family=Lobster&family=Orelega+One&family=Rancho&family=Rock+Salt&family=Seymour+One&family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contacto__container">
+
+        <header class="header__contenedor">
+            <div class="header__logo">
+                <img src="./Imagenes/Salon logo/IMG-20211205-WA0006.jpg" alt="logo">
+            </div>
+        </header>
+        <nav class="nav__contenedor">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./Fotos.html">Fotos</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+       
+    </div>
+    <div class="contacto__formulario">
+        <div class="contacto__tex">
+            <h1>ENVIANOS TU CONSULTA O SOLICITÁ TU PRESUPUESTO<h1>
+            <p>Consultá las condiciones y los servicios incluidos para cada tipo de Evento.  
+            Vení a visitarnos y Reservá tu fecha!!!</p>
+        </div>
+        <div class="contacto__tel">
+            <p>Dirección: Independencia 1498- Tigre - (Cp1648)Teléfono:4715-9246 Celular: 11-3032-7087 Email:tueventoparadise@gmail.com</p>
+
+        </div>
+    
+        
+    
+        <fieldset class="contacto__datos">
+            <legend>Ingrese sus datos</legend>
+            <form action="method ="get enctype="text/plain">
+            <label for="surname">Apellido</label>
+            <input type="text" id="surname" placeholder="Ingrese su apellido" required>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Ingrese su nombre" required>
+            <label for="tel">Telefono</label>
+            <input type="text" id="tel" placeholder="Telefono" required>
+            <label for="mail">Email</label>
+            <input type="text" id="mail" placeholder="Ingrese su email" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo"></form>
+        </fieldset>
+    </div>
+    
+</body>
+</html>

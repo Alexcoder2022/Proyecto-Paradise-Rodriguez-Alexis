@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header nav nav"
+    "foto foto foto"
+    "section section footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 600px  300px;
+    
+
+}
+header {
+    grid-area: header;
+    background-color: black;
+} 
+nav {
+    grid-area: nav;
+    background-color: black;
+}
+
+section {
+    grid-area: section;
+    background-color:black;
+    color:white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    flex-direction: column;
+   
+}
+main {
+    grid-area: foto;
+   
+}
+footer {
+    grid-area: footer;
+    background-color:sandybrown ;
+    display: flex;
+    align-items: center;
+   
+}
+.header__contenedor {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.header__contenedor .header__logo img {
+    width: 250px;
+    height:auto ;
+   
+   
+    
+}
+.nav__contenedor {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.nav__contenedor ul li { 
+    display: inline;
+    
+}
+.nav__contenedor ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;;
+    font-size: 35px;
+    padding: 5px;
+}
+.nav__contenedor ul li a:hover {
+    background-color: black;
+    color: blueviolet;
+}
+.img__principal {
+    background-image: url(../Imagenes/4.jpg);
+    background-size: cover;
+    background-position: center;
+ 
+
+}
+.img__principal img{
+    height: 100%;
+    
+    
+   
+}
+
+.section__contenedor .section__texto {
+    font-family: 'Arizonia', cursive;
+    font-size: 30px;
+}
+.section__contenedor .section__titulo {
+    color:white;
+    font-family: 'Arizonia', cursive;
+    font-size: 30px;
+}
+.footer__contenedor {
+    background-color: black;
+}
+.footer__contenedor h2 {
+    font-family: 'Arizonia', cursive;
+    color: white;   
+}
+@media (min-width:425px) and (max-width:768px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "foto"
+        "section"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    .header__contenedor {
+        grid-area: header;
+
+    }
+    .nav__contenedor{
+        grid-area: nav;
+    }
+    .img__principal {
+        grid-area: foto;
+        background-image: url(../Imagenes/4.jpg);
+        
+    }
+    .section__contenedor {
+        grid-area: section;
+    }
+
+    
+    /*Nosotros*/
+    
+    .nosotros__container {
+        display: grid;
+        height: 200px;
+        grid-template-areas: 
+    "header nav nav"
+}
+.nosotros__texto {
+    background-color: black;
+    height: 500px;
+    font-family: 'Arizonia', cursive;
+    font-size: 30px;
+}
+.nosotros__texto .nosotros__titulo {
+    color:white;
+    font-family: 'Arizonia', cursive;
+    font-size: 50px;
+
+}
+
+.nosotros__container{
+    display: grid;
+    
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section";
+    grid-template-columns:auto;
+    grid-template-rows: auto auto ;
+}
+.header__contenedor {
+    grid-area: header;
+}
+.nav__contenedor {
+    grid-area: nav;
+    
+}
+.nosotros__texto {
+    grid-area: section;
+    grid-row: 2/3;
+}
+
+
+
+
+         /*Servicios*/
+.servicios__container {
+    display: grid;
+    height: 200px;
+    grid-template-areas: 
+    "header nav nav"
+    
+    
+    
+}
+.img__servicios {
+    display: grid;
+    grid-template-areas: 
+    "foto foto foto"
+    "texto texto texto"
+    "texto texto texto";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 200px 200px;
+    background-color: blueviolet;
+    
+}
+.img__servicios img {
+    height: 100%;
+    width: 100%;
+}
+.caja__infantiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.caja__infantiles .infantiles__texto {
+    color:black;
+    font-size: 20px;
+}
+.caja__15 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.caja__15 .caja__texto {
+    color:black;
+    font-size: 20px;
+    
+}
+.caja__casamientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.caja__casamientos .casamientos__texto {
+    color:black;
+    font-size: 20px;
+
+}
+.servicios__container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "fotos";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    
+}
+.header__contenedor {
+    grid-area: header;
+    
+}
+.nav__contenedor {
+    grid-area: nav;
+    
+}
+.img__servicios {
+    grid-area: fotos;
+    
+}
+.img__servicios img {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+     /*Fotos*/
+
+.fotos__container {
+    display: grid;
+    height: 200px;
+    grid-template-areas: 
+    "header nav nav"
+    
+    
+}
+.galeria__imag {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+    
+}
+.galeria__imag :nth-child(1){
+    height: 100%;
+    
+}
+
+.galeria__imag img {
+    width: 100%;
+    
+}
+
+   /*Contacto*/
+.contacto__container {
+    display: grid;
+    height: 200px;
+    grid-template-areas: 
+    "header nav nav"
+    
+} 
+.contacto__formulario {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 600px;
+    background-color: burlywood;
+    justify-items: center;
+} 
+.contacto__formulario .contacto__tex {
+    grid-column:1/3 ;
+    grid-row: 1/2;
+    align-items: end;
+    align-self: center;
+
+}
+.contacto__formulario .contacto__tex p {
+    font-size:30px;
+    
+    
+}
+.contacto__formulario .contacto__tel {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.contacto__formulario .contacto__tel p {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.contacto__formulario .contacto__datos {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 50%;
+    align-items: center;
+}
+.contacto__formulario .contacto__datos form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 30px;
+    
+    
+}
+.contacto__formulario .contacto__datos input {
+    font-size: 20px;
+}
+
+
+}
+
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+  
+
+    
+    
+    
+
