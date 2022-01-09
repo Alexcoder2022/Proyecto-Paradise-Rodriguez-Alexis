@@ -84,14 +84,14 @@ footer {
     background-image: url(../Imagenes/4.jpg);
     background-size: cover;
     background-position: center;
- 
-
+    
+    
 }
 .img__principal img{
     height: 100%;
     
     
-   
+    
 }
 
 .section__contenedor .section__texto {
@@ -124,7 +124,7 @@ footer {
     }
     .header__contenedor {
         grid-area: header;
-
+        
     }
     .nav__contenedor{
         grid-area: nav;
@@ -137,7 +137,8 @@ footer {
     .section__contenedor {
         grid-area: section;
     }
-
+    
+}
     
     /*Nosotros*/
     
@@ -145,9 +146,9 @@ footer {
         display: grid;
         height: 200px;
         grid-template-areas: 
-    "header nav nav"
-}
-.nosotros__texto {
+        "header nav nav"
+    }
+    .nosotros__texto {
     background-color: black;
     height: 500px;
     font-family: 'Arizonia', cursive;
@@ -361,7 +362,6 @@ footer {
 }
 
 
-}
 
 
 
