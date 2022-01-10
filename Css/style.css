@@ -28,8 +28,7 @@ nav {
 section {
     grid-area: section;
     background-color:black;
-    color:white;
-    display: flex;
+    color:white;display: flex;
     align-items: center;
     padding-left: 20px;
     padding-right: 10px;
@@ -54,11 +53,7 @@ footer {
 }
 .header__contenedor .header__logo img {
     width: 250px;
-    height:auto ;
-
-   
-   
-    
+    height:auto ;    
 }
 
 .nav__contenedor {
@@ -67,8 +62,7 @@ footer {
     align-content: center;
 }
 .nav__contenedor ul li { 
-    display: inline;
-    
+    display: inline;   
 }
 .nav__contenedor ul li a {
     color: white;
@@ -85,14 +79,9 @@ footer {
     background-image: url(../Imagenes/4.jpg);
     background-size: cover;
     background-position: center;
- 
-
 }
 .img__principal img{
     height: 100%;
-    
-    
-   
 }
 
 .section__contenedor .section__texto {
@@ -172,10 +161,7 @@ footer {
     display: grid;
     height: 200px;
     grid-template-areas: 
-    "header nav nav"
-    
-    
-    
+    "header nav nav"   
 }
 .img__servicios {
     display: grid;
@@ -251,11 +237,6 @@ footer {
     flex-direction: column;
 }
 
-
-
-
-
-
      /*Fotos*/
 
 .fotos__container {
@@ -304,7 +285,6 @@ footer {
     grid-row: 1/2;
     align-items: end;
     align-self: center;
-
 }
 .contacto__formulario .contacto__tex p {
     font-size:30px;
