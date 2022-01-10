@@ -27,7 +27,7 @@ nav {
 
 section {
     grid-area: section;
-    background-color:black;
+    background: linear-gradient(blueviolet, rgb(141, 49, 49));
     color:white;display: flex;
     align-items: center;
     padding-left: 20px;
