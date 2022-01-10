@@ -269,8 +269,7 @@ footer {
     display: grid;
     height: 200px;
     grid-template-areas: 
-    "header nav nav"
-    
+    "header nav nav"   
 } 
 .contacto__formulario {
     
