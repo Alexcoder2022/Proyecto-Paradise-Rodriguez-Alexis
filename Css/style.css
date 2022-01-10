@@ -79,7 +79,6 @@ footer {
     background-image: url(../Imagenes/4.jpg);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
     
     
 }
@@ -88,11 +87,6 @@ footer {
     
     
     
-=======
-}
-.img__principal img{
-    height: 100%;
->>>>>>> mi-rama
 }
 
 .section__contenedor .section__texto {
@@ -143,7 +137,6 @@ footer {
     
     /*Nosotros*/
     
-<<<<<<< HEAD
     .nosotros__container {
         display: grid;
         height: 200px;
@@ -155,13 +148,12 @@ footer {
     height: 500px;
     font-family: 'Arizonia', cursive;
     font-size: 30px;
-}
+    }
 .nosotros__texto .nosotros__titulo {
     color:white;
     font-family: 'Arizonia', cursive;
     font-size: 50px;
-=======
->>>>>>> mi-rama
+    }
 
 
  .nosotros__container{
