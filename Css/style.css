@@ -29,7 +29,6 @@ section {
     grid-area: section;
     background-color:black;
     color:white;
-    font-size: 20px;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -56,10 +55,12 @@ footer {
 .header__contenedor .header__logo img {
     width: 250px;
     height:auto ;
+
    
    
     
 }
+
 .nav__contenedor {
     display: grid;
     justify-content: center;
@@ -141,51 +142,32 @@ footer {
     
     /*Nosotros*/
     
-    .nosotros__container {
-        display: grid;
-        height: 200px;
-        grid-template-areas: 
-    "header nav nav"
-}
-.nosotros__texto {
-    background-color: black;
-    height: 500px;
-    font-family: 'Arizonia', cursive;
-    font-size: 30px;
-}
-.nosotros__texto .nosotros__titulo {
-    color:white;
-    font-family: 'Arizonia', cursive;
-    font-size: 50px;
 
-}
 
-.nosotros__container{
+ .nosotros__container{
     display: grid;
-    
     grid-template-areas: 
     "header"
     "nav"
     "section";
     grid-template-columns:auto;
     grid-template-rows: auto auto ;
-}
-.header__contenedor {
+    }
+ .header__contenedor {
     grid-area: header;
-}
-.nav__contenedor {
+ }
+ .nav__contenedor {
     grid-area: nav;
     
-}
-.nosotros__texto {
+ }
+ .nosotros__texto {
     grid-area: section;
     grid-row: 2/3;
+ }
+ .nosotros__texto p {
+    font-size: 50px;
 }
-
-
-
-
-         /*Servicios*/
+          /*Servicios*/
 .servicios__container {
     display: grid;
     height: 200px;
@@ -364,6 +346,35 @@ footer {
 }
 
 
+
+
+
+
+@media (min-width:769px) and (max-width:1024px) {
+    
+    .nosotros__container {
+        display: grid;
+        height: 200px;
+        grid-template-areas: 
+        "header nav nav"
+    }
+    .nosotros__texto {
+     background-color: black;
+   
+    }
+    .nosotros__texto .nosotros__titulo {
+     color:white;
+     font-family: 'Arizonia', cursive;
+     font-size: 100px;
+  
+    }
+
+    .nosotros__texto p {
+        height: 100vh;
+        font-size: 35px;
+    }
+    
+}
 
 
 
