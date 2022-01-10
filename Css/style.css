@@ -27,10 +27,8 @@ nav {
 
 section {
     grid-area: section;
-    background-color:black;
-    color:white;
-    font-size: 20px;
-    display: flex;
+    background: linear-gradient(blueviolet, rgb(141, 49, 49));
+    color:white;display: flex;
     align-items: center;
     padding-left: 20px;
     padding-right: 10px;
@@ -55,19 +53,16 @@ footer {
 }
 .header__contenedor .header__logo img {
     width: 250px;
-    height:auto ;
-   
-   
-    
+    height:auto ;    
 }
+
 .nav__contenedor {
     display: grid;
     justify-content: center;
     align-content: center;
 }
 .nav__contenedor ul li { 
-    display: inline;
-    
+    display: inline;   
 }
 .nav__contenedor ul li a {
     color: white;
@@ -84,6 +79,7 @@ footer {
     background-image: url(../Imagenes/4.jpg);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
     
     
 }
@@ -92,6 +88,11 @@ footer {
     
     
     
+=======
+}
+.img__principal img{
+    height: 100%;
+>>>>>>> mi-rama
 }
 
 .section__contenedor .section__texto {
@@ -142,6 +143,7 @@ footer {
     
     /*Nosotros*/
     
+<<<<<<< HEAD
     .nosotros__container {
         display: grid;
         height: 200px;
@@ -158,43 +160,39 @@ footer {
     color:white;
     font-family: 'Arizonia', cursive;
     font-size: 50px;
+=======
+>>>>>>> mi-rama
 
-}
 
-.nosotros__container{
+ .nosotros__container{
     display: grid;
-    
     grid-template-areas: 
     "header"
     "nav"
     "section";
     grid-template-columns:auto;
     grid-template-rows: auto auto ;
-}
-.header__contenedor {
+    }
+ .header__contenedor {
     grid-area: header;
-}
-.nav__contenedor {
+ }
+ .nav__contenedor {
     grid-area: nav;
     
-}
-.nosotros__texto {
+ }
+ .nosotros__texto {
     grid-area: section;
     grid-row: 2/3;
+ }
+ .nosotros__texto p {
+    font-size: 50px;
 }
-
-
-
-
-         /*Servicios*/
+          /*Servicios*/
 .servicios__container {
     display: grid;
     height: 200px;
     grid-template-areas: 
-    "header nav nav"
-    
-    
-    
+    "header nav nav"   
 }
 .img__servicios {
     display: grid;
@@ -270,11 +268,6 @@ footer {
     flex-direction: column;
 }
 
-
-
-
-
-
      /*Fotos*/
 
 .fotos__container {
@@ -307,8 +300,7 @@ footer {
     display: grid;
     height: 200px;
     grid-template-areas: 
-    "header nav nav"
-    
+    "header nav nav"   
 } 
 .contacto__formulario {
     
@@ -323,7 +315,6 @@ footer {
     grid-row: 1/2;
     align-items: end;
     align-self: center;
-
 }
 .contacto__formulario .contacto__tex p {
     font-size:30px;
@@ -364,6 +355,35 @@ footer {
 
 
 
+
+
+
+
+@media (min-width:769px) and (max-width:1024px) {
+    
+    .nosotros__container {
+        display: grid;
+        height: 200px;
+        grid-template-areas: 
+        "header nav nav"
+    }
+    .nosotros__texto {
+     background-color: black;
+   
+    }
+    .nosotros__texto .nosotros__titulo {
+     color:white;
+     font-family: 'Arizonia', cursive;
+     font-size: 100px;
+  
+    }
+
+    .nosotros__texto p {
+        height: 100vh;
+        font-size: 35px;
+    }
+    
+}
 
 
 
